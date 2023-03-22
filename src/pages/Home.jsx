@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
     <Heading w={350} p={2.5} m="auto" marginBottom={5}  bgColor="black" borderRadius={10} color='white'>GrêmioPomo 🇪🇪⏳ </Heading>
-    <Container className='background' border={['1px solid #000000']}>
+    <Container className='background'>
       <Box >
         <Box p='5' rounded='md' textAlign="center">
           <SubHeader/>

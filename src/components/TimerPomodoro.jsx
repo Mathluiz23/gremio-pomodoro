@@ -117,13 +117,13 @@ const TimerPomodoro = () => {
             }}
           />
         </Box>
-        <Box flex="2" fontSize={['5rem', '7.5rem']} color="white">
+        <Box flex="2" fontSize={['6rem', '8.5rem']} color="white">
           {time < 10 ? '0' + time : time}
         </Box>
         <Box flex="1">
           :
         </Box>
-        <Box flex="2" fontSize={['5rem', '7.5rem']} color="white">
+        <Box flex="2" fontSize={['6rem', '8.5rem']} color="white">
           {seconds < 10 ? '0' + seconds : seconds}
         </Box>
         <Box flex="1">
