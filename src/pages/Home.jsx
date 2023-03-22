@@ -5,7 +5,9 @@ import TimerPomodoro from '../components/TimerPomodoro';
 export default function Home() {
   return (
     <>
-    <Heading w={350} p={2.5} m="auto" marginBottom={5}  bgColor="black" borderRadius={10} color='white'>GrêmioPomo 🇪🇪⏳ </Heading>
+    <div className='header'>
+    <Heading m="auto" borderRadius={10} color='white'>GrêmioPomo 🇪🇪⏳ </Heading>
+    </div>
     <Container className='background'>
       <Box >
         <Box p='5' rounded='md' textAlign="center">

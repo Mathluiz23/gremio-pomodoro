@@ -5,6 +5,17 @@
   margin: 0;
   padding: 0;
 }
+.header {
+  width: 350px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: black;
+  border-bottom: 1px solid white;
+  border-radius: 0 0 10px 10px;
+}
 
 .background {
   /* background-image: url("./wallpaper.jpg"); */
