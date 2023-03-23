@@ -25,7 +25,7 @@ const TimerPomodoro = () => {
     Swal.fire({
       title: 'Oh no!',
       text: 'Timer cannot be less than 00:00 Min!',
-      imageUrl: 'https://terceirotempo.uol.com.br/imagens/24/11/arq_92411.jpg',
+      imageUrl: 'https://www.jornaldocomercio.com/_midias/jpg/2021/04/16/gre6-9295320.jpg',
       imageWidth: 400,
       imageHeight: 300,
       imageAlt: 'Custom image',
@@ -70,6 +70,7 @@ const TimerPomodoro = () => {
             confirmButtonColor: '#00466c',
           }).then(() => {
           alarme.pause();
+          setSeconds(0);
         });
       }, 1000);
 
@@ -151,7 +152,7 @@ const TimerPomodoro = () => {
           _placeholder={{ color: 'white' }}
           placeholder="enter seconds"
           onChange={(e) => {
-            parseInt(e.target.value) <= 60
+            parseInt(e.target.value) >=1 &&  parseInt(e.target.value) <= 60 && e.target.value.length <= 2
               ? setSeconds(parseInt(e.target.value))
               : Swal.fire({
                 title: 'What a disaster!',
@@ -180,7 +181,7 @@ const TimerPomodoro = () => {
           padding={['6px 12px', '24px']}
           border="2px solid white"
           onClick={() => {
-            setTime(1);
+            setTime(prevCount => prevCount + 1);
           }}
         >
           1 min
@@ -193,7 +194,7 @@ const TimerPomodoro = () => {
           color="#00466c"
           colorScheme="whiteAlpha"
           onClick={() => {
-            setTime(10);
+            setTime(prevCount => prevCount + 10);
           }}
           
         >
@@ -207,7 +208,7 @@ const TimerPomodoro = () => {
           border={'2px solid white'}
           colorScheme="blackAlpha"
           onClick={() => {
-            setTime(25);
+            setTime(prevCount => prevCount + 25);
           }}
         >
           25 min
