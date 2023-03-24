@@ -38,7 +38,7 @@ Neste projeto, foram utilizadas as seguintes habilidades:
 Clone o projeto
 
 ```bash
-  git clone 
+  git clone git@github.com:Mathluiz23/gremio-pomodoro.git
 ```
 
 Entre no diretório do projeto
