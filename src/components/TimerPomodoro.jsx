@@ -97,42 +97,45 @@ const TimerPomodoro = () => {
   }
 
   return (
-    <Heading>
+    <Heading
+      width={['100%']}
+    >
       <Stack
         alignItems="center"
         direction={['row']}
         justifyContent="space-between"
-        spacing={[4, 5]}
         style={styles.timer}
-        width="100%"
-        maxWidth="600px"
+      
+      
       >
-        <Box flex="1">
+        <Box>
           <IconButton
             aria-label="Minus-Icon"
             color="#00466c"
             icon={<MinusIcon />}
-            size="md"
+            size="sm"
+            margin={['0 0 20px 0']}
             onClick={() => {
               decFun();
             }}
           />
         </Box>
-        <Box flex="2" fontSize={['6rem', '8.5rem']} color="white">
+        <Box color="white" fontSize={150} minWidth={'200px'} margin={[10]}>
           {time < 10 ? '0' + time : time}
         </Box>
-        <Box flex="1">
+        <Box color="white" fontSize={100} margin={[10]}>
           :
         </Box>
-        <Box flex="2" fontSize={['6rem', '8.5rem']} color="white">
+        <Box color="white" fontSize={150} minWidth={'200px'} margin={[10]}>
           {seconds < 10 ? '0' + seconds : seconds}
         </Box>
-        <Box flex="1">
+        <Box >
           <IconButton
             aria-label="Add-Icon"
             color="#00466c"
             icon={<AddIcon />}
-            size="md"
+            size="sm"
+            margin={['0 0 20px 0']}
             onClick={() => {
               setTime(prevCount => prevCount + 5);
             }}
