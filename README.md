@@ -3,6 +3,13 @@
 O Grêmio Pomodoro é um projeto desenvolvido em 𝘙𝘦𝘢𝘤𝘵, que implementa um timer estilo pomodoro, onde você pode definir a atividade que deseja realizar e o tempo em minutos e segundos para executar essa atividade. Quando o tempo se esgota, uma mensagem é exibida e o hino do Grêmio é tocado como forma de alerta para informar que o tempo da tarefa se esgotou.
 
 Time Grêmio Pomodoro Demo
+## :desktop_computer: :iphone: Deploy
+
+Neste link você tem acesso ao projeto disponibilizado na web.
+
+click aqui: https://gremio-pomodoro.vercel.app/
+
+A
 
  ## 📲 Funcionalidades
 - Inserir texto sobre a atividade a ser realizada.
